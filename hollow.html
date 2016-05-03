@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+			<title>hollow</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet/less" type="text/css" href="stylesheets/base.less" />
+		<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".hollow-sub li").click(function(){
+					var index=$(this).index();
+					$(".hollow-cont").find(".content").eq(index).show().siblings().hide();
+					if(index==2){
+						alert("hollow word")
+					}
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="warpee">
+			<div id="hollow">
+				<h3>每个语言都有他的hollow Word,我们当然也有</h3>
+				<ul class="hollow-sub">
+					<li>HTML</li>
+					<li>CSSL</li>
+					<li>Javascript</li>
+				</ul>
+				<div class="hollow-cont">
+					<div class="content block">
+						<h1>hollow word</h1>
+						<p>hollow word</p>
+						<b>hollow word</b></br>
+						<u>hollow word</u>
+					</div>
+					<div class="content">
+						<div class="H"></div>
+						<div class="O"></div>
+						<div class="L"></div>
+						<div class="L"></div>
+						<div class="O"></div>
+						<div class="W"></div>
+						<div class="clear"></div>
+						<div class="W"></div>
+						<div class="R"></div>
+						<div class="O"></div>
+						<div class="D"></div>
+						
+					</div>
+					<div class="content">
+						这是javascript,真的
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/less.js"></script>
+
+</html>
